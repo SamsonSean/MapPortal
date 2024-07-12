@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+</head>
+<body>
+    <div id="province_table" class="d-flex  justify-content-center table-responsive">
+        <table class="table table-striped  " >
+            <thead>
+                <tr>
+                    <th >Province</th>
+                    <th class="text-center">Download</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script>
+        var data = [
+{"proviunce" : "Albay.zip", "link": "https://119.92.65.179/share.cgi?ssid=f26c930a270443538d2f0168e30d88ad"},
+{"proviunce" : "Bataan.zip", "link": "https://119.92.65.179/share.cgi?ssid=ee8085aa28e543a98024eabfe63ccab9"},
+{"proviunce" : "Batanes.zip", "link": "https://119.92.65.179/share.cgi?ssid=5c2a7ed1eb574a0d8628a31193c99139"},
+{"proviunce" : "Benguet.zip", "link": "https://119.92.65.179/share.cgi?ssid=e32174e35b564e1e8e989933c74420b8"},
+{"proviunce" : "Bulacan.zip", "link": "https://119.92.65.179/share.cgi?ssid=2452b2522e474cabbd24a212c5941342"},
+{"proviunce" : "Cagayan.zip", "link": "https://119.92.65.179/share.cgi?ssid=c46327c46ba143d9a5dc4d4eefdfaf8c"},
+{"proviunce" : "Camarines_Nor.zip", "link": "https://119.92.65.179/share.cgi?ssid=90209f24a23f423195ab27a560feb563"},
+{"proviunce" : "Camarines_Sur.zip", "link": "https://119.92.65.179/share.cgi?ssid=845e1d44e4554f9980ec8e473eb8f57e"},
+{"proviunce" : "Catanduanes.zip", "link": "https://119.92.65.179/share.cgi?ssid=4aaeed0803444eceb34c3f907e190920"},
+{"proviunce" : "Ifugao.zip", "link": "https://119.92.65.179/share.cgi?ssid=3c448e261d324d9d9dc862e8d9a078ed"},
+{"proviunce" : "Isabela.zip", "link": "https://119.92.65.179/share.cgi?ssid=36a1721665574c8992be71953ac86b9f"},
+{"proviunce" : "KalingaApayao.zip", "link": "https://119.92.65.179/share.cgi?ssid=035bd28ab44d4d42af92de4e1c8394a9"},
+{"proviunce" : "Laguna.zip", "link": "https://119.92.65.179/share.cgi?ssid=3f53ce663b9846399049f3d3acf40791"},
+{"proviunce" : "Masbate.zip", "link": "https://119.92.65.179/share.cgi?ssid=778936577bde48ba959f1da53035507f"},
+{"proviunce" : "Mindoro_Occi.zip", "link": "https://119.92.65.179/share.cgi?ssid=7562e8ecbaf64b59bc5cdf85dd0e4198"},
+{"proviunce" : "Mindoro_Orient.zip", "link": "https://119.92.65.179/share.cgi?ssid=042bc4d68e104ddcb9cc1e1614d8ce71"},
+{"proviunce" : "Misamis_Or.zip", "link": "https://119.92.65.179/share.cgi?ssid=090c7b3278794291bc2a3f9a3efbf307"},
+{"proviunce" : "MtProv.zip", "link": "https://119.92.65.179/share.cgi?ssid=737ab218d18c4f45acc421008441aea1"},
+{"proviunce" : "Negros_Occ.zip", "link": "https://119.92.65.179/share.cgi?ssid=91b98c305b41428ebba27ff0fcf75fcf"},
+{"proviunce" : "Nueva.zip", "link": "https://119.92.65.179/share.cgi?ssid=e052952c387a4ce1b74698cfa37a33f0"},
+{"proviunce" : "Pampanga.zip", "link": "https://119.92.65.179/share.cgi?ssid=4b383311b4cf4323a9a39e08f2cafd1c"},
+{"proviunce" : "Quirino.zip", "link": "https://119.92.65.179/share.cgi?ssid=0b6dc497638a4e8da3ed51f248f9b966"},
+{"proviunce" : "Rizal.zip", "link": "https://119.92.65.179/share.cgi?ssid=6696e8633a2e477e83e9c07c7da5c59c"},
+{"proviunce" : "Sorsogon.zip", "link": "https://119.92.65.179/share.cgi?ssid=e9244d4c8402420492cb652353504dbf"},
+{"proviunce" : "Sulu.zip", "link": "https://119.92.65.179/share.cgi?ssid=f88c2b5379c440f4940f5105ae7a1eef"},
+{"proviunce" : "Tarlac.zip", "link": "https://119.92.65.179/share.cgi?ssid=c70189eb25964c94be70bfd109a5380f"},
+{"proviunce" : "Tawi.zip", "link": "https://119.92.65.179/share.cgi?ssid=5b7c940c8e524076bfc3b65b284ff709"},
+{"proviunce" : "Zambales.zip", "link": "https://119.92.65.179/share.cgi?ssid=b736da328d994c0c93b623ce6e0280b0"}
+];
+
+var tableBody = document.getElementById("province_table").getElementsByTagName("tbody")[0];
+
+data.forEach(function(item){
+    var row = tableBody.insertRow();
+
+    var provinceCell = row.insertCell();
+    provinceCell.textContent = item.province;
+    
+
+    var linkCell = row.insertCell();
+
+    var link = document.createElement('a');
+
+    var icon = document.createElement('i');
+
+    linkCell.className = 'text-center';
+    icon.className = 'fas fa-download';
+
+    link.href = item.link;
+    link.target = '_blank';
+
+    link.appendChild(icon);
+    linkCell.appendChild(link);
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+var crop_zone_array = [
+{"province":"Albay.zip", "link": "https://119.92.65.179/share.cgi?ssid=bb9132e6d9214e42b4c8348ed1964ca1"},
+{"province":"Bataan.zip", "link": "https://119.92.65.179/share.cgi?ssid=9b98694e615d4a0392fcbf1133531c53"},
+{"province":"Batanes.zip", "link": "https://119.92.65.179/share.cgi?ssid=34323e4a55334039a959e81266f0fff5"},
+{"province":"Bulacan.zip", "link": "https://119.92.65.179/share.cgi?ssid=04e295371b2841118f7767d33f8bc3cb"},
+{"province":"Camarines_Nor.zip", "link": "https://119.92.65.179/share.cgi?ssid=76ee132bf1354ca49eafd81976048a72"},
+{"province":"Catanduanes.zip", "link": "https://119.92.65.179/share.cgi?ssid=a27bda5cfb5842d28bcc56f08fff1b3d"},
+{"province":"GenSantos.zip", "link": "https://119.92.65.179/share.cgi?ssid=57f870246bf14d28864208cff1f96cce"},
+{"province":"KalingaApayao.zip", "link": "https://119.92.65.179/share.cgi?ssid=31eac7b035684663b42998bdcd605873"},
+{"province":"Masbate.zip", "link": "https://119.92.65.179/share.cgi?ssid=13218834849b4a5f81414a8de1e22e32"},
+{"province":"Misamis_Or.zip", "link": "https://119.92.65.179/share.cgi?ssid=852e62852e054212849b2a14ddfae85e"},
+{"province":"Negros_Or.zip", "link": "https://119.92.65.179/share.cgi?ssid=5021ec65222540b6b38070f2d4322c76"},
+{"province":"Nueva.zip", "link": "https://119.92.65.179/share.cgi?ssid=33ff7e9a6368434998a87520e9c1f665"},
+{"province":"Pampanga.zip", "link": "https://119.92.65.179/share.cgi?ssid=124652fdf1cf4831a5aeb877d6583d90"},
+{"province":"SoCotabato.zip", "link": "https://119.92.65.179/share.cgi?ssid=3b24a197cefb43a38a84fa19793ba036"},
+{"province":"Sulu.zip", "link": "https://119.92.65.179/share.cgi?ssid=01680869a59f44c5a3d786182c5c70c3"},
+{"province":"Surigao_DelSur.zip", "link": "https://119.92.65.179/share.cgi?ssid=3dce68e0836b4183ae0a2822ecbb04a7"},
+{"province":"Tarlac.zip", "link": "https://119.92.65.179/share.cgi?ssid=16bf72e171024cac96cf82dc46af164d"},
+{"province":"Tawi.zip", "link": "https://119.92.65.179/share.cgi?ssid=ad8dc27b93c4491b9b672e23e3afa529"},
+{"province":"Zambales.zip", "link": "https://119.92.65.179/share.cgi?ssid=697cfdc3a6574d5e945efb7280892a62"}
+]
